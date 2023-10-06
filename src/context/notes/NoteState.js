@@ -17,7 +17,7 @@ const notesInitial=
           "__v": 0
         },
         {
-          "_id": "651ece3cc14395f459a9c332",
+          "_id": "651ece3cc14395f459a932",
           "user": "651e86762421c756fa2179d7",
           "title": "Lovestory24",
           "description": "This is under testing",
@@ -26,7 +26,7 @@ const notesInitial=
           "__v": 0
         },
         {
-          "_id": "651ece3cc14395f459a9c332",
+          "_id": "651ecec14395f9c334",
           "user": "651e86762421c756fa2179d7",
           "title": "Lovestory24",
           "description": "This is under testing",
@@ -35,7 +35,7 @@ const notesInitial=
           "__v": 0
         },
         {
-          "_id": "651ece3cc14395f459a9c332",
+          "_id": "651ece3cc14395f9c335",
           "user": "651e86762421c756fa2179d7",
           "title": "Lovestory24",
           "description": "This is under testing",
@@ -44,7 +44,7 @@ const notesInitial=
           "__v": 0
         },
         {
-          "_id": "651ece3cc14395f459a9c332",
+          "_id": "651ece3cc14395f459a9c",
           "user": "651e86762421c756fa2179d7",
           "title": "Lovestory24",
           "description": "This is under testing",
@@ -55,6 +55,18 @@ const notesInitial=
       ]
       const[notes,setNotes]= useState(notesInitial)
 
+      //Add a note
+      const addNode=()=>{
+
+      }
+      //Delete a note
+      const deleteNode=(id)=>{
+
+      }
+      //Edit a note
+      const editNode=(id)=>{
+
+      }
     return(
         <NoteContext.Provider value={{notes,setNotes}}>
             {props.children}
