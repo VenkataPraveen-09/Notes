@@ -1,9 +1,11 @@
     const express = require ('express')
     const mongoose =require('mongoose')
     const app=express()
-    
+    var cors=require('cors')
     mongoose.connect('mongodb://127.0.0.1:27017/crud')
     app.use(express.json())
+
+    app.use(cors())
     // const userSchema=mongoose.Schema({
     //     Age : Number,
     //     Name : String
