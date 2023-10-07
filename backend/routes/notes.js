@@ -56,8 +56,6 @@ router.put(
         const { title, description, tag } = req.body;
         // new note object creation
         try {
-            
-        
         const newNote={};
         if (title) {
             newNote.title = title;

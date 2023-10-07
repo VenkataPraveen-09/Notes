@@ -6,6 +6,8 @@
     app.use(express.json())
 
     app.use(cors())
+    
+
     // const userSchema=mongoose.Schema({
     //     Age : Number,
     //     Name : String
