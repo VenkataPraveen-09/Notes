@@ -92,18 +92,6 @@ router.delete(
     async (req, res) => {
         try {
             
-        
-        // new note object creation
-        const newNote={};
-        if (title) {
-            newNote.title = title;
-          }
-          if (description) {
-            newNote.description = description;
-          }
-          if (tag) {
-            newNote.tag = tag;
-          }
 
         //Finding the note to be deleted 
         let note=await Note.findById(req.params.id);
