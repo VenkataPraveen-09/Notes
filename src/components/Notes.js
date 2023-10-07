@@ -93,7 +93,10 @@ const onChange=(e)=>{
 
     <div>
       <div className="row my-3">
-      <h1>Your Notes </h1>
+      <h1>Your Notes :</h1>
+      <div className="my-1">
+      {notes.length===0 && <h3>No Notes to display</h3>}
+      </div>
       {notes.map((note)=>{
         return <NoteItem key={note._id} updateNote={updateNote}note={note}/>;
       })}
