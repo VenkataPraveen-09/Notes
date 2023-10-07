@@ -35,19 +35,7 @@ const notesInitial=
             },
             body: JSON.stringify({title,description,tag})
           });
-          const json=await response.json();
-          console.log(json)
-        console.log("Adding a new node");
-        const note=
-          {
-            "_id": "651ece3cc14395f459a9c",
-            "user": "651e86762421c756fa2179d7",
-            "title": title,
-            "description": description,
-            "tag": tag,
-            "date": "2023-10-05T14:54:52.605Z",
-            "__v": 0
-          }
+          const note=await response.json();
         setNotes(notes.concat(note))
       }
 
