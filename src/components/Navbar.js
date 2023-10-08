@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">INoteBook</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,15 @@ const Navbar = () => {
     
       </ul>
       {!localStorage.getItem('token')?<form className="d-flex" role="search">
-      <Link className="btn btn-primary mx-2" to="/login" role="button">Login</Link>
-      <Link className="btn btn-primary mx-2" to="/signup" role="button">Signup</Link>
+      <Link className="btn btn-primary btn-black mx-2" to="/login" role="button">Login</Link>
+      <Link className="btn btn-primary btn-black mx-2" to="/signup" role="button">Signup</Link>
       </form>:<button onClick={handleLogout} className="btn btn-primary">Logout</button>}
     </div>
   </div>
 </nav>
+
     </div>
+    
   )
 }
 

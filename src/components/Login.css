@@ -1,0 +1,52 @@
+
+
+  /* Login Container styling (if needed) */
+
+  .login-container {
+    max-width: 500px; /* Adjust container width as needed */
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  /* Login Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Login Input field styling */
+  .login-input {
+    margin-bottom: 20px; /* Increase the margin to create more space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .login-input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Login Error message styling */
+  .login-error {
+    color: #dc3545;
+    font-size: 14px;
+  }
+  
+  /* Login Button styling */
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .pleasant-background {
+    background-image: url('./images/back.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center-align the background image */
+
+  }
