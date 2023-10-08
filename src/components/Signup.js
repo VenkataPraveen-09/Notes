@@ -20,7 +20,7 @@ const Signup = (props) => {
           if(json){
             //redirect
             localStorage.setItem('token',json.authtoken);
-            navig('/');
+            navig("/login");
             props.showAlert("Account Created Successfully","success");
           }
           else{
@@ -32,7 +32,8 @@ const onChange=(e)=>{
 }
 
   return (
-    <div className='container'>
+    <div className='container my-2'>
+      <h3>Create an account to use Inotebook</h3>
     <form onSubmit={handleSubmit}>
     <div className="mb-3">
     <label htmlFor="name" className="form-label">Name</label>

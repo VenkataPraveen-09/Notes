@@ -30,7 +30,8 @@ const Login = (props) => {
         setCredentials({...credentials,[e.target.name]:e.target.value})
     }
   return (
-    <div>
+    <div className='container mt-2'>
+      <h3>Login to use Inotebook</h3>
       <form onSubmit={handleSubmit}>
   <div className="mb-3">
     <label htmlFor="email" className="form-label">Email address</label>
